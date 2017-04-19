@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.project.stickysoft.customalarm.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Alarm In Seconds "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:textColor="@color/textColor"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:hint="Enter Time In Seconds"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/alarmTime"
+        android:background="@color/textColor" />
+
+    <Button
+        android:text="Set Alarm"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/createAlarm"
+        android:drawableLeft="@drawable/alarm"
+        android:layout_below="@+id/alarmTime"
+        android:layout_centerHorizontal="true"
+        android:onClick="createAlarm" />
+
+
+</RelativeLayout>
